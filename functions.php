@@ -62,3 +62,10 @@ function materializewp_resources(){
 }
 
 add_action('wp_enqueue_scripts', 'materializewp_resources');
+
+// Registramos dos posiciones para el menu
+register_nav_menus( array(
+	'navbar' => __( 'Navbar', 'materializewp'),
+	'top'    => __( 'Top', 'materializewp' ),
+	'Footer 1' => __( 'Footer 1', 'materializewp' ),
+) );
